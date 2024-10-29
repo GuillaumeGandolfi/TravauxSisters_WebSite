@@ -1,5 +1,3 @@
 import { defineConfig } from "astro/config";
 
-export default defineConfig({
-  base: "/TravauxSisters_WebSite/",
-});
+export default defineConfig({});
