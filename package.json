@@ -1,15 +1,16 @@
 {
-  "name": "",
+  "name": "astro-website",
   "type": "module",
   "version": "0.0.1",
   "scripts": {
-    "dev": "astro dev",
+    "dev": "dotenv -e .env.local astro dev",
     "start": "astro dev",
-    "build": "astro build",
-    "preview": "astro preview",
+    "build": "dotenv -e .env astro build",
+    "preview": "dotenv -e .env astro preview",
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^4.16.7"
+    "astro": "^4.16.7",
+    "dotenv": "^16.4.5"
   }
 }
