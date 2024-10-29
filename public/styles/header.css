@@ -1,0 +1,41 @@
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 3rem;
+  background-color: #fff;
+}
+
+.logo img {
+  max-height: 40px;
+  height: auto;
+  width: auto;
+}
+
+.navigation ul {
+  display: flex;
+  gap: 2.5rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navigation ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.navigation ul li a:hover {
+  color: #ff1493;
+}
+
+.contact-button a {
+  padding: 0.75rem 1.5rem;
+  background-color: #ff1493;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: 600;
+}
