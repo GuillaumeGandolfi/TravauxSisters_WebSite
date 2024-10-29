@@ -3,10 +3,10 @@
   "type": "module",
   "version": "0.0.1",
   "scripts": {
-    "dev": "dotenv -e .env.local astro dev",
+    "dev": "node -r dotenv/config ./node_modules/.bin/astro dev --dotenv-config=.env.local",
     "start": "astro dev",
-    "build": "dotenv -e .env astro build",
-    "preview": "dotenv -e .env astro preview",
+    "build": "node -r dotenv/config ./node_modules/.bin/astro build --dotenv-config=.env",
+    "preview": "node -r dotenv/config ./node_modules/.bin/astro preview --dotenv-config=.env",
     "astro": "astro"
   },
   "dependencies": {
