@@ -11,36 +11,36 @@
 
 .promise-cards {
   display: flex;
-  justify-content: center; /* Distribution égale des cartes */
-  align-items: flex-start; /* Alignement vertical des cartes */
-  gap: 1rem; /* Espacement entre les cartes */
-  flex-wrap: nowrap; /* Empêche les cartes de passer à la ligne suivante */
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1rem;
+  flex-wrap: nowrap;
 }
 
 .card {
   background-color: white;
   border-radius: 0;
   box-shadow: none;
-  padding: 1rem; /* Réduction du padding */
-  max-width: 200px; /* Réduction de la largeur maximale */
+  padding: 1rem;
+  max-width: 200px;
   text-align: center;
 }
 
 .card-icon {
-  width: 70px; /* Réduction de la largeur */
-  height: 70px; /* Réduction de la hauteur */
-  margin-bottom: 0.5rem; /* Réduction de l'espacement sous l'icône */
+  width: 70px;
+  height: 70px;
+  margin-bottom: 0.5rem;
 }
 
 .card-title {
   font-size: 1.1rem;
   color: #ff1493;
   margin-bottom: 0.5rem;
-  font-weight: 600; /* Ajuste la graisse de la police (300 = léger, 400 = normal, 500 = moyen) */
+  font-weight: 600;
 }
 
 .card-text {
   font-size: 0.9rem;
   color: #333;
-  line-height: 1.5; /* Ajuste cette valeur selon l'effet désiré (1.4 à 1.6 est recommandé) */
+  line-height: 1.5;
 }

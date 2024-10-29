@@ -1,0 +1,87 @@
+.project-wrapper {
+  background-color: #f3f3f3;
+  width: 100%;
+  padding: 2rem 0;
+}
+
+.project-section {
+  display: flex;
+  justify-content: center;
+  padding: 4rem 2rem;
+}
+
+.project-container {
+  display: flex;
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+  gap: 2rem;
+}
+
+.project-image img {
+  max-width: 500px;
+  border-radius: 0.5rem;
+}
+
+.project-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.project-content h2 {
+  font-size: 1.6rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.project-content .intro-text {
+  font-size: 0.9rem;
+  color: #333;
+  display: block;
+  margin-bottom: 1.5rem;
+}
+
+.icon-list span {
+  font-size: 0.9rem;
+  color: #333;
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.icon-list .icon {
+  color: #ff1493;
+  margin-right: 0.5rem;
+}
+
+.strong-messages {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.strong-messages strong {
+  display: block;
+  font-size: 1.1rem;
+  color: inherit;
+}
+
+.strong-messages .highlight {
+  color: #ff1493;
+}
+
+.btn-primary {
+  background-color: #ff1493;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  display: inline-block;
+  width: auto;
+  border-radius: 1.5rem 0 1.5rem 0;
+  font-size: 1rem;
+  text-align: center;
+  transition: background-color 0.3s ease;
+  align-self: flex-start;
+}
