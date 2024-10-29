@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import Card from '../components/Card.astro';
 ---
 <BaseLayout>
   <section 
@@ -13,6 +14,36 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         <a href="#" class="btn-primary">Vous êtes un particulier</a>
         <a href="#" class="btn-secondary">Vous êtes un artisan</a>
       </div>
+    </div>
+  </section>
+
+  <section class="promise-section">
+    <h2 class="promise-title">Notre promesse</h2>
+    <div class="promise-cards">
+      <Card 
+        iconSrc={`${import.meta.env.BASE_URL}images/quality.png`}
+        iconAlt="Icône de qualité"
+        title="Qualité"
+        text="Une qualité irréprochable en sélectionnant les meilleurs artisans pour vos projets de rénovation."
+      />
+      <Card 
+        iconSrc={`${import.meta.env.BASE_URL}images/reactivity.png`}
+        iconAlt="Icône de réactivité"
+        title="Réactivité"
+        text="Vous avez un contact direct avec une experte qui répond rapidement à toutes vos interrogations sur votre projet."
+      />
+      <Card 
+        iconSrc={`${import.meta.env.BASE_URL}images/trust.png`}
+        iconAlt="Icône de confiance"
+        title="Confiance"
+        text="Au cœur du projet, nous souhaitons rétablir la confiance entre les femmes et les artisans."
+      />
+      <Card 
+        iconSrc={`${import.meta.env.BASE_URL}images/sorority.png`}
+        iconAlt="Icône de sororité"
+        title="Sororité"
+        text="Une communauté de femmes qui s’entraident, se fait des recommandations et se donne des conseils."
+      />
     </div>
   </section>
 </BaseLayout>

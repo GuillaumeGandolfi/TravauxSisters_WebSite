@@ -1,0 +1,8 @@
+---
+const { iconSrc, iconAlt, title, text } = Astro.props;
+---
+<div class="card">
+  <img src={iconSrc} alt={iconAlt} class="card-icon" loading="lazy" />
+  <h3 class="card-title">{title}</h3>
+  <p class="card-text">{text}</p>
+</div>
