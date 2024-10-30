@@ -19,9 +19,9 @@ import Card from '../components/Card.astro';
 </div>
   </section>
 
-  <section class="promise-section">
-    <h2 class="promise-title">Notre promesse</h2>
-    <div class="promise-cards">
+  <section class="promise-section" aria-labelledby="promise-title">
+    <h2 id="promise-title" class="promise-title">Notre promesse</h2>
+    <div class="promise-cards" role="list">
       <Card 
         iconSrc={`${import.meta.env.BASE_URL}images/quality.png`}
         iconAlt="Icône de qualité"
@@ -48,6 +48,7 @@ import Card from '../components/Card.astro';
       />
     </div>
   </section>
+  
 
   <section class="project-wrapper">
     <div class="project-container">

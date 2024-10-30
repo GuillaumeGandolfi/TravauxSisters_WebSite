@@ -1,8 +1,9 @@
 ---
 const { iconSrc, iconAlt, title, text } = Astro.props;
+const titleId = `card-title-${title.toLowerCase().replace(/\s+/g, '-')}`;
 ---
-<div class="card">
+<div class="card" role="listitem" aria-labelledby={titleId}>
   <img src={iconSrc} alt={iconAlt} class="card-icon" loading="lazy" />
-  <h3 class="card-title">{title}</h3>
+  <h3 id={titleId} class="card-title">{title}</h3>
   <p class="card-text">{text}</p>
 </div>
