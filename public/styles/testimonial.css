@@ -1,0 +1,93 @@
+.testimonial-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem 2rem;
+  background-size: contain;
+}
+
+.testimonial-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1100px; /* Réduit la largeur totale */
+  margin: 0 auto;
+  gap: 1rem;
+}
+
+.testimonial-left,
+.testimonial-right {
+  flex: 1;
+  max-width: 45%; /* Limite la largeur de chaque div */
+}
+
+.testimonial-left {
+  padding-right: 2rem;
+}
+
+.testimonial-left h2 {
+  font-size: 2.6rem; /* Augmente la taille du texte */
+  margin-bottom: 1rem;
+}
+
+.testimonial-left p {
+  font-size: 1rem; /* Taille de police standard */
+  color: #333; /* Couleur de texte standard */
+  line-height: 1.6; /* Espacement entre les lignes pour aérer le texte */
+  margin-bottom: 1.5rem; /* Espace supplémentaire en bas du paragraphe */
+}
+
+.testimonial-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.testimonial-box {
+  padding: 2rem;
+  border: 2px solid #bbb;
+  border-radius: 0.75rem;
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0.8)
+    ),
+    /* Superposition blanche translucide */
+      url("/TravauxSisters_WebSite/images/quote-message.png") no-repeat top left; /* Chemin relatif si l'image est dans le dossier public/images/ */
+  background-size: 140px;
+  position: relative;
+  max-width: 350px;
+}
+
+/* Styles pour l'auteur */
+.author-name {
+  display: block;
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #333; /* Couleur plus sombre pour le prénom */
+  margin-bottom: 0.5rem;
+}
+
+/* Styles pour la date */
+.review-date {
+  display: block;
+  font-size: 1rem;
+  color: #666666; /* Couleur plus claire pour le texte de la date */
+  margin-bottom: 1rem;
+}
+
+/* Styles pour la note */
+.review-rating {
+  font-size: 1rem;
+  color: #ffcc00; /* Couleur jaune pour les étoiles */
+  margin-bottom: 1rem;
+}
+
+/* Styles pour le texte de l'avis */
+.testimonial-box p {
+  font-size: 0.95rem;
+  color: #333;
+  line-height: 1.5;
+}
