@@ -5,16 +5,18 @@ import Card from '../components/Card.astro';
 <BaseLayout>
   <section 
   class="hero-section" 
+  role="banner"
+  aria-label="Section principale de bienvenue, illustrant des travaux sans stress avec Travaux Sisters"
   style={`background: url('${import.meta.env.BASE_URL}images/homepage_image.jpg') center/cover no-repeat;`}
 >
-    <div class="hero-content">
-      <h1>Les femmes méritent des travaux sans stress</h1>
-      <p>Parce que vous n’êtes pas toujours à l’aise de choisir un artisan sans recommandation, il y a Travaux Sisters.</p>
-      <div class="hero-buttons">
-        <a href="#" class="btn-primary">Vous êtes un particulier</a>
-        <a href="#" class="btn-secondary">Vous êtes un artisan</a>
-      </div>
-    </div>
+<div class="hero-content">
+  <h1>Les femmes méritent des travaux sans stress</h1>
+  <p>Parce que vous n’êtes pas toujours à l’aise de choisir un artisan sans recommandation, il y a Travaux Sisters.</p>
+  <div class="hero-buttons">
+    <a href={`${import.meta.env.BASE_URL}services`} class="hero-btn-primary" aria-label="Accéder à la page des services" title="Accéder à la page des services">Vous êtes un particulier</a>
+    <a href={`${import.meta.env.BASE_URL}devenez-artisan-partenaire-travauxsisters`} class="hero-btn-secondary" aria-label="Devenir artisan partenaire" title="Devenir artisan partenaire">Vous êtes un artisan</a>
+  </div>
+</div>
   </section>
 
   <section class="promise-section">
