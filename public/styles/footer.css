@@ -1,0 +1,89 @@
+.footer {
+  background-color: #481b4b;
+  color: #fff;
+  padding: 2rem 1rem;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1100px;
+  margin: 0 auto;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.footer-logo img {
+  max-width: 200px;
+  height: auto;
+}
+
+.footer-contact,
+.footer-about,
+.footer-social {
+  flex: 1;
+  margin: 0 1rem;
+}
+
+.footer-contact h3,
+.footer-about h3,
+.footer-social h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.footer-contact ul,
+.footer-about ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-contact li {
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+}
+
+.footer-about li {
+  margin-bottom: 1rem;
+}
+
+.footer-social .social-icons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.footer-social .social-icons img {
+  width: 30px;
+  height: 30px;
+}
+
+.footer-copyright {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 0.875rem;
+}
+
+.footer-logo {
+  margin-right: 1.5rem;
+}
+
+.footer-contact,
+.footer-about,
+.footer-social {
+  flex: 1;
+  margin: 0 1rem;
+}
+
+.emoji-icon {
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
+  margin-right: 0.5rem;
+}
+
+.social-icon {
+  width: 30px; /* Ajuste la largeur de l'icône */
+  height: 30px; /* Ajuste la hauteur de l'icône */
+  fill: #fff; /* Couleur de l'icône, blanc par défaut */
+}
