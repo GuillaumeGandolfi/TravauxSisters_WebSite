@@ -73,5 +73,29 @@ import Card from '../components/Card.astro';
       </div>
     </div>
   </section>
+
+  <section class="form-section">
+    <h2 class="form-section-title">Des projets de travaux ? Parlons-en !</h2>
+    <div class="form-grid">
+      <a href="./form/int-renovation" class="form-button" style={`background: url('${import.meta.env.BASE_URL}images/int-renovation.png');`}>
+        <span>Rénovation intérieure</span>
+      </a>
+      <a href="/form/isolation-energie" class="form-button" style={`background: url('${import.meta.env.BASE_URL}images/isolation.png');`}>
+        <span>Isolation & énergie</span>
+      </a>
+      <a href="/form/renovation-exterieur" class="form-button" style={`background: url('${import.meta.env.BASE_URL}images/ext-renovation.png');`}>
+        <span>Rénovation extérieur</span>
+      </a>
+      <a href="/form/extension-aggrandissement" class="form-button" style={`background: url('${import.meta.env.BASE_URL}images/extension.png');`}>
+        <span>Extension & agrandissement</span>
+      </a>
+      <a href="/form/amenagement-exterieur" class="form-button" style={`background: url('${import.meta.env.BASE_URL}images/ext-design.png');`}>
+        <span>Aménagement extérieur</span>
+      </a>
+      <a href="/form/autre-projet" class="form-button" style={`background: url('${import.meta.env.BASE_URL}images/other-project.png');`}>
+        <span>Autre projet</span>
+      </a>
+    </div>
+  </section>
   
 </BaseLayout>

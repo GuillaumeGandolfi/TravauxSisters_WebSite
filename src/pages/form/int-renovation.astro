@@ -1,0 +1,14 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import FormComponent from '../../components/FormComponent.astro';
+
+const title = "Projet de rénovation de votre intérieur";
+const placeholderProject = "Ex : Je souhaite créer une verrière mais je ne sais pas par où commencer";
+---
+
+<BaseLayout>
+  <FormComponent 
+    title={title} 
+    placeholderProject={placeholderProject} 
+  />
+</BaseLayout>
