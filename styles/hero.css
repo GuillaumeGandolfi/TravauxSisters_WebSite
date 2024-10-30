@@ -75,35 +75,35 @@
   transition: background-color 0.3s ease;
 }
 
-/** ------ MOBILE ------ **/
+/* ------ MOBILE ------ */
 @media (max-width: 768px) {
   .hero-section {
-    padding: 4rem 1.5rem; /* Réduire le padding pour mobile */
+    padding: 4rem 1.5rem;
   }
 
   .hero-content h1 {
-    font-size: 2rem; /* Réduire la taille de police du titre */
+    font-size: 2rem;
   }
 
   .hero-content p {
-    font-size: 1rem; /* Réduire la taille de police du paragraphe */
+    font-size: 1rem;
   }
 
   .hero-btn-primary,
   .hero-btn-secondary {
     padding: 0.5rem 1rem;
     font-size: 0.875rem;
-    width: 80%; /* Réduire la largeur des boutons */
-    max-width: 300px; /* Limiter la largeur maximale des boutons */
+    width: 80%;
+    max-width: 300px;
     text-align: center;
-    border-radius: 10px; /* Arrondis classiques sur mobile */
+    border-radius: 10px;
   }
 
   .hero-buttons {
     display: flex;
-    justify-content: center; /* Centrer les boutons */
+    justify-content: center;
     gap: 1rem;
     flex-direction: column;
-    align-items: center; /* Assurer que les boutons sont alignés au centre */
+    align-items: center;
   }
 }

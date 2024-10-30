@@ -44,3 +44,16 @@
   color: #333;
   line-height: 1.5;
 }
+
+/* ------ MOBILE ------ */
+@media (max-width: 768px) {
+  .promise-cards {
+    flex-direction: column; /* Aligner les cartes verticalement sur mobile */
+    gap: 1.5rem; /* Ajouter un peu plus d'espace entre les cartes */
+    align-items: center; /* Centrer les cartes dans leur conteneur */
+  }
+
+  .card {
+    max-width: 90%; /* Augmenter la largeur maximale pour mieux remplir l'espace sur mobile */
+  }
+}
