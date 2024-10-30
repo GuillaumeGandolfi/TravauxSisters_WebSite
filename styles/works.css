@@ -1,0 +1,38 @@
+.form-section {
+  text-align: center;
+  padding: 4rem 2rem;
+  max-width: 800px; /* Limite la largeur totale de la section */
+  margin: 0 auto; /* Centre la section */
+}
+
+.form-section-title {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.form-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 150px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 0 0 2rem 0;
+  position: relative;
+  text-decoration: none;
+  color: #fff;
+  transition: transform 0.3s ease;
+}
+
+.form-button span {
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7); /* Ajoute une ombre légère pour améliorer la lisibilité */
+}

@@ -1,0 +1,77 @@
+.project-form {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.project-form h1 {
+  text-align: center;
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+.project-form label {
+  display: block;
+  font-weight: bold;
+  margin: 1rem 0 0.5rem;
+  color: #555;
+}
+
+.project-form input,
+.project-form select,
+.project-form textarea {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  color: #333;
+  box-sizing: border-box;
+}
+
+.project-form input:focus,
+.project-form select:focus,
+.project-form textarea:focus {
+  outline: none;
+  border-color: #ff1493;
+  box-shadow: 0 0 5px rgba(255, 20, 147, 0.2);
+}
+
+.project-form textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.project-form button {
+  display: block;
+  width: 100%;
+  padding: 0.75rem 1rem;
+  background-color: #ff1493;
+  color: #fff;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 1rem;
+}
+
+.project-form button:hover {
+  background-color: #e0127c;
+}
+
+.project-form button:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(255, 20, 147, 0.2);
+}
+
+.project-form .required::after {
+  content: " *";
+  color: #ff0000;
+}
