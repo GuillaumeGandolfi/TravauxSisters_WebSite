@@ -36,3 +36,18 @@
   font-weight: bold;
   text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7); /* Ajoute une ombre légère pour améliorer la lisibilité */
 }
+
+/* ------ MOBILE ------ */
+@media (max-width: 768px) {
+  .form-grid {
+    grid-template-columns: 1fr; /* Une seule colonne sur les petits écrans */
+    gap: 1.5rem; /* Ajoute plus d'espace entre les éléments sur mobile */
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .form-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 colonnes sur les tablettes */
+    gap: 1rem;
+  }
+}

@@ -83,29 +83,30 @@ import Card from '../components/Card.astro';
   </section>
   
 
-  <section class="form-section">
-    <h2 class="form-section-title">Des projets de travaux ? Parlons-en !</h2>
-    <div class="form-grid">
-      <a href="./form/int-renovation" class="form-button" style={`background: url('${import.meta.env.BASE_URL}images/int-renovation.png');`}>
+  <section class="form-section" aria-labelledby="form-section-title">
+    <h2 id="form-section-title" class="form-section-title">Des projets de travaux ? Parlons-en !</h2>
+    <div class="form-grid" role="list">
+      <a href="/form/int-renovation" class="form-button" role="listitem" style={`background: url('${import.meta.env.BASE_URL}images/int-renovation.png');`} aria-label="Rénovation intérieure">
         <span>Rénovation intérieure</span>
       </a>
-      <a href="/form/isolation-energie" class="form-button" style={`background: url('${import.meta.env.BASE_URL}images/isolation.png');`}>
+      <a href="/form/isolation-energie" class="form-button" role="listitem" style={`background: url('${import.meta.env.BASE_URL}images/isolation.png');`} aria-label="Isolation et énergie">
         <span>Isolation & énergie</span>
       </a>
-      <a href="/form/renovation-exterieur" class="form-button" style={`background: url('${import.meta.env.BASE_URL}images/ext-renovation.png');`}>
+      <a href="/form/renovation-exterieur" class="form-button" role="listitem" style={`background: url('${import.meta.env.BASE_URL}images/ext-renovation.png');`} aria-label="Rénovation extérieur">
         <span>Rénovation extérieur</span>
       </a>
-      <a href="/form/extension-aggrandissement" class="form-button" style={`background: url('${import.meta.env.BASE_URL}images/extension.png');`}>
+      <a href="/form/extension-aggrandissement" class="form-button" role="listitem" style={`background: url('${import.meta.env.BASE_URL}images/extension.png');`} aria-label="Extension et agrandissement">
         <span>Extension & agrandissement</span>
       </a>
-      <a href="/form/amenagement-exterieur" class="form-button" style={`background: url('${import.meta.env.BASE_URL}images/ext-design.png');`}>
+      <a href="/form/amenagement-exterieur" class="form-button" role="listitem" style={`background: url('${import.meta.env.BASE_URL}images/ext-design.png');`} aria-label="Aménagement extérieur">
         <span>Aménagement extérieur</span>
       </a>
-      <a href="/form/autre-projet" class="form-button" style={`background: url('${import.meta.env.BASE_URL}images/other-project.png');`}>
+      <a href="/form/autre-projet" class="form-button" role="listitem" style={`background: url('${import.meta.env.BASE_URL}images/other-project.png');`} aria-label="Autre projet">
         <span>Autre projet</span>
       </a>
     </div>
   </section>
+  
 
   <section class="testimonial-section" style={`background: url('${import.meta.env.BASE_URL}images/paint-background.png') no-repeat top left;`}>
     <div class="testimonial-content">
