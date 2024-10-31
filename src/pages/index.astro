@@ -1,6 +1,10 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Card from '../components/Card.astro';
+
+import { Image } from 'astro:assets';
+import PictoImage from '../assets/images/picto.png';
+
 ---
 <BaseLayout>
   <section 
@@ -53,12 +57,12 @@ import Card from '../components/Card.astro';
   <section class="project-wrapper" aria-labelledby="project-title">
     <div class="project-container">
       <div class="project-image">
-        <img 
-          src={`${import.meta.env.BASE_URL}images/picto.png`} 
-          alt="Travaux de rénovation effectués par Travaux Sisters" 
-          class="project-image" 
-          loading="lazy" 
-        />
+        <Image 
+        src={PictoImage} 
+        alt="Travaux de rénovation effectués par Travaux Sisters" 
+        class="project-image" 
+        loading="lazy"
+      />
       </div>
       <div class="project-content">
         <h2 id="project-title">Un accompagnement pour votre projet travaux, main dans la main.</h2>
@@ -77,7 +81,7 @@ import Card from '../components/Card.astro';
           <strong><span class="highlight">100%</span> de satisfaction</strong>
           <strong><span class="highlight">100%</span> du processus maîtrisé</strong>
         </div>
-        <a href="/services" class="btn-primary" aria-label="Découvrir les services de Travaux Sisters">Je découvre !</a>
+        <a href={`${import.meta.env.BASE_URL}services`} class="btn-primary" aria-label="Découvrir les services de Travaux Sisters">Je découvre !</a>
       </div>
     </div>
   </section>
@@ -85,27 +89,40 @@ import Card from '../components/Card.astro';
 
   <section class="form-section" aria-labelledby="form-section-title">
     <h2 id="form-section-title" class="form-section-title">Des projets de travaux ? Parlons-en !</h2>
-    <div class="form-grid" role="list">
-      <a href="/form/int-renovation" class="form-button" role="listitem" style={`background: url('${import.meta.env.BASE_URL}images/int-renovation.png');`} aria-label="Rénovation intérieure">
-        <span>Rénovation intérieure</span>
-      </a>
-      <a href="/form/isolation-energie" class="form-button" role="listitem" style={`background: url('${import.meta.env.BASE_URL}images/isolation.png');`} aria-label="Isolation et énergie">
-        <span>Isolation & énergie</span>
-      </a>
-      <a href="/form/renovation-exterieur" class="form-button" role="listitem" style={`background: url('${import.meta.env.BASE_URL}images/ext-renovation.png');`} aria-label="Rénovation extérieur">
-        <span>Rénovation extérieur</span>
-      </a>
-      <a href="/form/extension-aggrandissement" class="form-button" role="listitem" style={`background: url('${import.meta.env.BASE_URL}images/extension.png');`} aria-label="Extension et agrandissement">
-        <span>Extension & agrandissement</span>
-      </a>
-      <a href="/form/amenagement-exterieur" class="form-button" role="listitem" style={`background: url('${import.meta.env.BASE_URL}images/ext-design.png');`} aria-label="Aménagement extérieur">
-        <span>Aménagement extérieur</span>
-      </a>
-      <a href="/form/autre-projet" class="form-button" role="listitem" style={`background: url('${import.meta.env.BASE_URL}images/other-project.png');`} aria-label="Autre projet">
-        <span>Autre projet</span>
-      </a>
-    </div>
+    <ul class="form-grid">
+      <li>
+        <a href="./form/int-renovation" class="form-button" style={`background: url('${import.meta.env.BASE_URL}images/int-renovation.png');`} aria-label="Rénovation intérieure">
+          <span>Rénovation intérieure</span>
+        </a>
+      </li>
+      <li>
+        <a href="./form/isolation-energie" class="form-button" style={`background: url('${import.meta.env.BASE_URL}images/isolation.png');`} aria-label="Isolation et énergie">
+          <span>Isolation & énergie</span>
+        </a>
+      </li>
+      <li>
+        <a href="./form/renovation-exterieur" class="form-button" style={`background: url('${import.meta.env.BASE_URL}images/ext-renovation.png');`} aria-label="Rénovation extérieur">
+          <span>Rénovation extérieur</span>
+        </a>
+      </li>
+      <li>
+        <a href="./form/extension-aggrandissement" class="form-button" style={`background: url('${import.meta.env.BASE_URL}images/extension.png');`} aria-label="Extension et agrandissement">
+          <span>Extension & agrandissement</span>
+        </a>
+      </li>
+      <li>
+        <a href="./form/amenagement-exterieur" class="form-button" style={`background: url('${import.meta.env.BASE_URL}images/ext-design.png');`} aria-label="Aménagement extérieur">
+          <span>Aménagement extérieur</span>
+        </a>
+      </li>
+      <li>
+        <a href="./form/autre-projet" class="form-button" style={`background: url('${import.meta.env.BASE_URL}images/other-project.png');`} aria-label="Autre projet">
+          <span>Autre projet</span>
+        </a>
+      </li>
+    </ul>
   </section>
+  
   
 
   <section class="testimonial-section" 
@@ -120,7 +137,7 @@ import Card from '../components/Card.astro';
         <br>
         Choisissez parmi les trois offres disponibles, celle qui vous correspond le mieux.
       </p>
-      <a href="/services" class="btn-primary" aria-label="Prendre rendez-vous avec Travaux Sisters">Prendre RDV</a>
+      <a href={`${import.meta.env.BASE_URL}services`} class="btn-primary" aria-label="Prendre rendez-vous avec Travaux Sisters">Prendre RDV</a>
     </div>
     <div class="testimonial-right">
       <div class="testimonial-box" aria-labelledby="testimonial-author">
