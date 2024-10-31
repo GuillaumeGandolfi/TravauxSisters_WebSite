@@ -2,6 +2,7 @@
   background-color: #481b4b;
   color: #fff;
   padding: 2rem 1rem;
+  position: relative;
 }
 
 .footer-container {
@@ -86,4 +87,37 @@
   width: 30px; /* Ajuste la largeur de l'icône */
   height: 30px; /* Ajuste la hauteur de l'icône */
   fill: #fff; /* Couleur de l'icône, blanc par défaut */
+}
+
+/* ------ MOBILE ------ */
+@media (max-width: 768px) {
+  .footer {
+    min-height: 20vh; /* Ajuste selon la taille du footer */
+  }
+
+  .footer-container {
+    flex-direction: column; /* Aligne verticalement les sections sur mobile */
+    align-items: center; /* Centre les sections sur mobile */
+    gap: 1rem; /* Ajoute un espace entre les sections */
+  }
+
+  .footer-contact,
+  .footer-about,
+  .footer-social {
+    text-align: center; /* Centre le texte sur mobile */
+    margin: 0; /* Retire les marges latérales */
+    max-width: 100%; /* Prend toute la largeur sur mobile */
+  }
+
+  .footer-contact {
+    margin-top: -3rem; /* Marge négative pour faire remonter cette div */
+  }
+
+  .footer-social .social-icons {
+    justify-content: center; /* Centre les icônes sociales */
+  }
+
+  .footer-copyright {
+    padding-bottom: 1rem; /* Laisse de l'espace supplémentaire pour le texte de copyright */
+  }
 }
