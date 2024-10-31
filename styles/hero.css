@@ -55,7 +55,7 @@
 /* Bouton pour les particuliers */
 .hero-btn-primary {
   padding: 0.75rem 1.5rem;
-  background-color: #ff1493;
+  background-color: #d0137a;
   color: #fff;
   text-decoration: none;
   font-weight: 500;
@@ -67,10 +67,10 @@
 .hero-btn-secondary {
   padding: 0.75rem 1.5rem;
   background-color: #fff;
-  color: #ff1493;
+  color: #d0137a;
   text-decoration: none;
   font-weight: 500;
-  border: 2px solid #ff1493;
+  border: 2px solid #d0137a;
   border-radius: 0 30px 0 30px;
   transition: background-color 0.3s ease;
 }

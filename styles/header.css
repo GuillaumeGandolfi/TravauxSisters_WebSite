@@ -30,12 +30,12 @@
 }
 
 .navigation ul li a:hover {
-  color: #ff1493;
+  color: #d0137a;
 }
 
 .contact-button a {
   padding: 0.75rem 1.5rem;
-  background-color: #ff1493;
+  background-color: #d0137a;
   color: #fff;
   text-decoration: none;
   border-radius: 25px;
