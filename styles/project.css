@@ -44,7 +44,7 @@
 }
 
 .icon-list {
-  list-style-type: none; /* Retire les puces par défaut */
+  list-style-type: none;
   padding: 0;
   margin: 0;
 }
@@ -95,30 +95,30 @@
 /* ------ MOBILE ------ */
 @media (max-width: 768px) {
   .project-container {
-    flex-direction: column; /* Aligner verticalement les éléments sur mobile */
-    gap: 2rem; /* Ajuster l'espacement entre les éléments */
+    flex-direction: column;
+    gap: 2rem;
   }
 
   .project-image img {
-    max-width: 100%; /* S'assurer que l'image prend toute la largeur du conteneur */
+    max-width: 100%;
   }
 
   .project-content {
-    align-items: center; /* Centrer le contenu sur mobile */
-    text-align: center; /* Centrer le texte pour une meilleure lisibilité */
+    align-items: center;
+    text-align: center;
     padding: 0 1rem;
   }
 
   .project-content h2 {
-    font-size: 1.4rem; /* Ajuste la taille du titre pour mobile */
-    max-width: 90%; /* Réduit la largeur maximale sur mobile */
-    margin: 0 auto 2rem auto; /* Centre le titre */
+    font-size: 1.4rem;
+    max-width: 90%;
+    margin: 0 auto 2rem auto;
   }
 
   .project-content .intro-text {
-    font-size: 0.85rem; /* Ajuste la taille du texte pour mobile */
-    max-width: 90%; /* Réduit la largeur maximale sur mobile */
-    margin: 0 auto 2rem auto; /* Centre le paragraphe */
+    font-size: 0.85rem;
+    max-width: 90%;
+    margin: 0 auto 2rem auto;
   }
 
   .icon-list {
@@ -128,16 +128,16 @@
   }
 
   .icon-list li {
-    margin-bottom: 1rem; /* Plus d'espace entre les éléments de la liste */
+    margin-bottom: 1rem;
   }
 
   .strong-messages {
-    margin-top: 2rem; /* Plus d'espace au-dessus des messages forts */
-    margin-bottom: 3rem; /* Plus d'espace en dessous des messages forts */
+    margin-top: 2rem;
+    margin-bottom: 3rem;
   }
 
   .btn-primary {
-    align-self: center; /* Centrer le bouton sur mobile */
+    align-self: center;
     margin-top: 0.5rem;
   }
 }
