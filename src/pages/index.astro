@@ -50,32 +50,38 @@ import Card from '../components/Card.astro';
   </section>
   
 
-  <section class="project-wrapper">
+  <section class="project-wrapper" aria-labelledby="project-title">
     <div class="project-container">
       <div class="project-image">
-        <img src={`${import.meta.env.BASE_URL}images/picto.png`} alt="Travaux de rénovation" />
+        <img 
+          src={`${import.meta.env.BASE_URL}images/picto.png`} 
+          alt="Travaux de rénovation effectués par Travaux Sisters" 
+          class="project-image" 
+          loading="lazy" 
+        />
       </div>
       <div class="project-content">
-        <h2>Un accompagnement pour votre projet travaux, main dans la main.</h2>
-        <span class="intro-text">
+        <h2 id="project-title">Un accompagnement pour votre projet travaux, main dans la main.</h2>
+        <p class="intro-text">
           Travaux Sisters s’occupe du diagnostic de votre chantier à prévoir et vous accompagne jusqu’à son lancement.
-        </span>
-        <div class="icon-list">
-          <span><i class="icon">&#10003;</i> Entretien téléphonique de mise en contact</span>
-          <span><i class="icon">&#10003;</i> Un diagnostic du chantier à prévoir</span>
-          <span><i class="icon">&#10003;</i> Une estimation réaliste du coût des travaux</span>
-          <span><i class="icon">&#10003;</i> Une mise en relation avec un artisan de confiance selon l’expertise réalisée</span>
-          <span><i class="icon">&#10003;</i> Lancement des travaux selon le cahier des charges établi avec l’artisan</span>
-        </div>
+        </p>
+        <ul class="icon-list" role="list">
+          <li><i class="icon" aria-hidden="true">&#10003;</i> Entretien téléphonique de mise en contact</li>
+          <li><i class="icon" aria-hidden="true">&#10003;</i> Un diagnostic du chantier à prévoir</li>
+          <li><i class="icon" aria-hidden="true">&#10003;</i> Une estimation réaliste du coût des travaux</li>
+          <li><i class="icon" aria-hidden="true">&#10003;</i> Une mise en relation avec un artisan de confiance selon l’expertise réalisée</li>
+          <li><i class="icon" aria-hidden="true">&#10003;</i> Lancement des travaux selon le cahier des charges établi avec l’artisan</li>
+        </ul>
         <div class="strong-messages">
           <strong>Pas de mauvaises surprises</strong>
           <strong><span class="highlight">100%</span> de satisfaction</strong>
           <strong><span class="highlight">100%</span> du processus maîtrisé</strong>
         </div>
-        <a href="/services" class="btn-primary">Je découvre !</a>
+        <a href="/services" class="btn-primary" aria-label="Découvrir les services de Travaux Sisters">Je découvre !</a>
       </div>
     </div>
   </section>
+  
 
   <section class="form-section">
     <h2 class="form-section-title">Des projets de travaux ? Parlons-en !</h2>
