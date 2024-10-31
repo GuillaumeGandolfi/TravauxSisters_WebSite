@@ -6,11 +6,11 @@
       </a>
     </div>
 
-    <div class="menu-toggle" aria-label="Ouvrir le menu de navigation">
+    <button class="menu-toggle" aria-label="Ouvrir le menu de navigation" aria-expanded="false">
       <span></span>
       <span></span>
       <span></span>
-    </div>
+    </button>
 
     <nav class="navigation" role="navigation" aria-label="Navigation principale">
       <ul role="list">
@@ -32,7 +32,9 @@
       const navigation = document.querySelector('.navigation');
 
       menuToggle.addEventListener('click', () => {
+        const isExpanded = menuToggle.getAttribute('aria-expanded') === 'true';
         navigation.classList.toggle('open');
+        menuToggle.setAttribute('aria-expanded', !isExpanded);
       });
     });
   </script>
