@@ -43,6 +43,12 @@
   margin-bottom: 1.5rem;
 }
 
+.icon-list {
+  list-style-type: none; /* Retire les puces par défaut */
+  padding: 0;
+  margin: 0;
+}
+
 .icon-list span {
   font-size: 0.9rem;
   color: #333;
@@ -84,4 +90,54 @@
   text-align: center;
   transition: background-color 0.3s ease;
   align-self: flex-start;
+}
+
+/* ------ MOBILE ------ */
+@media (max-width: 768px) {
+  .project-container {
+    flex-direction: column; /* Aligner verticalement les éléments sur mobile */
+    gap: 2rem; /* Ajuster l'espacement entre les éléments */
+  }
+
+  .project-image img {
+    max-width: 100%; /* S'assurer que l'image prend toute la largeur du conteneur */
+  }
+
+  .project-content {
+    align-items: center; /* Centrer le contenu sur mobile */
+    text-align: center; /* Centrer le texte pour une meilleure lisibilité */
+    padding: 0 1rem;
+  }
+
+  .project-content h2 {
+    font-size: 1.4rem; /* Ajuste la taille du titre pour mobile */
+    max-width: 90%; /* Réduit la largeur maximale sur mobile */
+    margin: 0 auto 2rem auto; /* Centre le titre */
+  }
+
+  .project-content .intro-text {
+    font-size: 0.85rem; /* Ajuste la taille du texte pour mobile */
+    max-width: 90%; /* Réduit la largeur maximale sur mobile */
+    margin: 0 auto 2rem auto; /* Centre le paragraphe */
+  }
+
+  .icon-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .icon-list li {
+    margin-bottom: 1rem; /* Plus d'espace entre les éléments de la liste */
+  }
+
+  .strong-messages {
+    margin-top: 2rem; /* Plus d'espace au-dessus des messages forts */
+    margin-bottom: 3rem; /* Plus d'espace en dessous des messages forts */
+  }
+
+  .btn-primary {
+    align-self: center; /* Centrer le bouton sur mobile */
+    margin-top: 0.5rem;
+  }
 }
