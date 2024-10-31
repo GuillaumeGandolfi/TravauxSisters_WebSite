@@ -108,30 +108,33 @@ import Card from '../components/Card.astro';
   </section>
   
 
-  <section class="testimonial-section" style={`background: url('${import.meta.env.BASE_URL}images/paint-background.png') no-repeat top left;`}>
-    <div class="testimonial-content">
-      <div class="testimonial-left">
-        <h2>Celles qui en parlent le mieux, c'est vous !</h2>
+  <section class="testimonial-section" 
+  style={`background: url('${import.meta.env.BASE_URL}images/paint-background.png') no-repeat top left;`} 
+  aria-labelledby="testimonial-title"
+>
+  <div class="testimonial-content">
+    <div class="testimonial-left">
+      <h2 id="testimonial-title">Celles qui en parlent le mieux, c'est vous !</h2>
+      <p>
+        Un accompagnement sur mesure, pour vous les femmes. Pour que votre projet de rénovation ne soit plus une source d'inquiétude.
+        <br>
+        Choisissez parmi les trois offres disponibles, celle qui vous correspond le mieux.
+      </p>
+      <a href="/services" class="btn-primary" aria-label="Prendre rendez-vous avec Travaux Sisters">Prendre RDV</a>
+    </div>
+    <div class="testimonial-right">
+      <div class="testimonial-box" aria-labelledby="testimonial-author">
+        <span class="author-name" id="testimonial-author">Delphine</span>
+        <span class="review-date">Travaux réalisés en Décembre 2023</span>
+        <div class="review-rating" aria-label="Note de l'avis : 5 étoiles">★★★★★</div>
         <p>
-          Un accompagnement sur mesure, pour vous les femmes. Pour que votre projet de rénovation ne soit plus une source d'inquiétude.
-          <br>
-          Choisissez parmi les trois offres disponibles, celle qui vous correspond le mieux.
+          Mon carrelage avait explosé sans raison apparente, et impossible de comprendre ce qu'il fallait pour les assurances, mais aussi pour les réparations. Merci Florence pour ton aide, je pense que j'aurais abandonné sinon.
         </p>
-        <a href="/services" class="btn-primary">Prendre RDV</a>
-      </div>
-      <div class="testimonial-right">
-        <div class="testimonial-box">
-          <span class="author-name">Delphine</span>
-          <span class="review-date">Travaux réalisés en Décembre 2023</span>
-          <div class="review-rating">★★★★★</div>
-          <p>
-            Mon carrelage avait explosé sans raison apparente, et impossible de comprendre ce qu'il fallait pour les assurances, mais aussi pour les réparations. Merci Florence pour ton aide, je pense que j'aurais abandonné sinon.
-          </p>
-        </div>
-        
       </div>
     </div>
-  </section>
+  </div>
+</section>
+
   
   
 </BaseLayout>
