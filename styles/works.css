@@ -5,6 +5,12 @@
   margin: 0 auto;
 }
 
+.form-grid {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
 .form-section-title {
   font-size: 2rem;
   color: #333;
