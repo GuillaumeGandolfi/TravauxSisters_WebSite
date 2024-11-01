@@ -1,8 +1,26 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import HeroSection from '../components/HeroSection.astro';
+import FlorenceImage from '../assets/images/florence.webp';
 ---
 
 <BaseLayout>
-  <h1>À propos</h1>
-  <p>En savoir plus sur Travaux Sisters et notre mission.</p>
+  <HeroSection 
+    backgroundImage={FlorenceImage}
+    title="Une expertise dans le bâtiment"
+    description="À 19 ans, Florence Jaspart acquiert sa première maison et découvre sa passion pour le bricolage en la rénovant de A à Z. Consciente que ce secteur est souvent dominé par les hommes et que les informations pour les femmes sont limitées, elle s’engage à rendre le bricolage accessible à toutes."
+    primaryButton={{
+      href: `${import.meta.env.BASE_URL}about`,
+      ariaLabel: "En savoir plus sur Travaux Sisters",
+      title: "En savoir plus",
+      text: "En savoir plus"
+    }}
+    secondaryButton={{
+      href: `${import.meta.env.BASE_URL}contact`,
+      ariaLabel: "Contactez-nous",
+      title: "Contactez-nous",
+      text: "Contactez-nous"
+    }}
+  />
 </BaseLayout>
+

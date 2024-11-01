@@ -1,8 +1,25 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import HeroSection from '../components/HeroSection.astro';
+import ServicesImage from '../assets/images/services_image.webp';
 ---
 
 <BaseLayout>
-  <h1>Nos Services</h1>
-  <p>Découvrez nos services pour répondre à tous vos besoins.</p>
+  <HeroSection 
+    backgroundImage={ServicesImage}
+    title="Ne subissez plus vos travaux avec Travaux Sisters !"
+    description="À la recherche d’un artisan qualifié pour un projet de rénovation ou de travaux ? Ne cherchez plus, Travaux Sisters trouve votre artisan de qualité à votre place."
+    primaryButton={{
+      href: `${import.meta.env.BASE_URL}services`,
+      ariaLabel: "En savoir plus sur les services",
+      title: "En savoir plus",
+      text: "En savoir plus"
+    }}
+    secondaryButton={{
+      href: `${import.meta.env.BASE_URL}contact`,
+      ariaLabel: "Prendre un rendez-vous gratuit",
+      title: "Prendre un rendez-vous gratuit",
+      text: "Prendre un RDV gratuit"
+    }}
+  />
 </BaseLayout>

@@ -5,27 +5,27 @@ import Card from '../components/Card.astro';
 import { Image } from 'astro:assets';
 import PictoImage from '../assets/images/picto.webp';
 import HomepageImage from '../assets/images/homepage_image.webp';
+import HeroSection from '../components/HeroSection.astro';
 
 ---
 <BaseLayout>
-  <section class="hero-section" role="banner" aria-label="Section principale de bienvenue, illustrant des travaux sans stress avec Travaux Sisters">
-    <Image 
-    src={HomepageImage} 
-    alt="Travaux de rénovation sans stress avec Travaux Sisters" 
-    fetchpriority="high"
-    loading="eager"
-    class="hero-background-image"
-    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-  />
-    <div class="hero-content">
-      <h1>Les femmes méritent des travaux sans stress</h1>
-      <p>Parce que vous n’êtes pas toujours à l’aise de choisir un artisan sans recommandation, il y a Travaux Sisters.</p>
-      <div class="hero-buttons">
-        <a href={`${import.meta.env.BASE_URL}services`} class="hero-btn-primary" aria-label="Accéder à la page des services" title="Accéder à la page des services">Vous êtes un particulier</a>
-        <a href={`${import.meta.env.BASE_URL}devenez-artisan-partenaire-travauxsisters`} class="hero-btn-secondary" aria-label="Devenir artisan partenaire" title="Devenir artisan partenaire">Vous êtes un artisan</a>
-      </div>
-    </div>
-  </section>
+  <HeroSection 
+  backgroundImage={HomepageImage}
+  title="Les femmes méritent des travaux sans stress"
+  description="Parce que vous n’êtes pas toujours à l’aise de choisir un artisan sans recommandation, il y a Travaux Sisters."
+  primaryButton={{
+    href: `${import.meta.env.BASE_URL}services`,
+    ariaLabel: "Accéder à la page des services",
+    title: "Accéder à la page des services",
+    text: "Vous êtes un particulier"
+  }}
+  secondaryButton={{
+    href: `${import.meta.env.BASE_URL}devenez-artisan-partenaire-travauxsisters`,
+    ariaLabel: "Devenir artisan partenaire",
+    title: "Devenir artisan partenaire",
+    text: "Vous êtes un artisan"
+  }}
+/>
 
   <section class="promise-section" aria-labelledby="promise-title">
     <h2 id="promise-title" class="promise-title">Notre promesse</h2>

@@ -1,0 +1,30 @@
+---
+import { Image } from 'astro:assets';
+
+const { backgroundImage, title, description, primaryButton, secondaryButton } = Astro.props;
+---
+
+<section class="hero-section" role="banner" aria-label="Section principale de bienvenue">
+  <Image 
+    src={backgroundImage} 
+    alt={title} 
+    fetchpriority="high"
+    loading="eager"
+    class="hero-background-image"
+    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+  />
+  <div class="hero-content">
+    <div class="hero-text-wrapper">
+      <h1>{title}</h1>
+      <p>{description}</p>
+      <div class="hero-buttons">
+        <a href={primaryButton.href} class="hero-btn-primary" aria-label={primaryButton.ariaLabel} title={primaryButton.title}>
+          {primaryButton.text}
+        </a>
+        <a href={secondaryButton.href} class="hero-btn-secondary" aria-label={secondaryButton.ariaLabel} title={secondaryButton.title}>
+          {secondaryButton.text}
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
