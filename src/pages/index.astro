@@ -12,8 +12,10 @@ import HomepageImage from '../assets/images/homepage_image.webp';
     <Image 
     src={HomepageImage} 
     alt="Travaux de rénovation sans stress avec Travaux Sisters" 
-    fetchpriority="high" 
+    fetchpriority="high"
+    loading="eager"
     class="hero-background-image"
+    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
   />
     <div class="hero-content">
       <h1>Les femmes méritent des travaux sans stress</h1>
