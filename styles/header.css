@@ -54,7 +54,8 @@
   }
 
   .logo img {
-    max-height: 25px;
+    width: 100px;
+    height: auto;
   }
 
   .menu-toggle {
