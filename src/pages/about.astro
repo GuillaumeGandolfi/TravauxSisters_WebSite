@@ -2,6 +2,8 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import HeroSection from '../components/HeroSection.astro';
 import FlorenceImage from '../assets/images/florence.webp';
+import '../styles/community.css';
+import '../styles/stats.css';
 ---
 
 <BaseLayout>
@@ -22,5 +24,40 @@ import FlorenceImage from '../assets/images/florence.webp';
       text: "Contactez-nous"
     }}
   />
+
+  <section class="community-section">
+    <div class="community-image">
+      <img src={`${import.meta.env.BASE_URL}images/perso6.webp`} alt="Membre de la communauté Travaux Sisters" />
+    </div>
+    <div class="community-text">
+      <h4>NOTRE COMMUNAUTÉ</h4>
+      <h2>Notre but : La féminisation du bâtiment !</h2>
+      <p>Travaux Sisters, c’est avant tout une communauté avec l’ambition de casser les préjugés liés au métier du bâtiment. Nous sommes le marteau qui démolira ces préjugés et celui qui bâtira un secteur libre et prospère.</p>
+      <a href="/join-community" class="btn-primary">Je rejoins la communauté !</a>
+    </div>
+  </section>
+
+  <section class="stats-section">
+    <img src={`${import.meta.env.BASE_URL}images/stats.webp`} alt="Arrière-plan de la section statistiques" class="background-image" />
+    <div class="stats-content">
+      <div class="stat-item">
+        <span class="stat-value">+15</span>
+        <span class="stat-label">SALONS</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-value">+2</span>
+        <span class="stat-label">PRIX</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-value">+25%</span>
+        <span class="stat-label">NOTORIÉTÉ</span>
+      </div>
+    </div>
+  </section>
+  
+
+  
+  
+  
 </BaseLayout>
 
