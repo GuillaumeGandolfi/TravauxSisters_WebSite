@@ -2,6 +2,8 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import HeroSection from '../components/HeroSection.astro';
 import ServicesImage from '../assets/images/services_image.webp';
+
+import '../styles/price-cards.css';
 ---
 
 <BaseLayout>
@@ -22,4 +24,59 @@ import ServicesImage from '../assets/images/services_image.webp';
       text: "Prendre un RDV gratuit"
     }}
   />
+
+<section class="services-section">
+  <!-- Première div : Titre et Sous-titre -->
+  <div class="services-header">
+    <h2>Nos Services</h2>
+    <h3>Découvrez des offres adaptées à vos besoins !</h3>
+    <div class="underline"></div>
+  </div>
+
+  <!-- Deuxième div : Conteneur des cartes de prix avec image de fond -->
+  <div class="pricing-cards-wrapper">
+    <!-- Image de fond -->
+    <img src={`${import.meta.env.BASE_URL}images/price-cards.webp`} alt="Fond de la section des services" class="background-image" />
+    
+    <!-- Cartes de prix -->
+    <div class="services-cards">
+      <div class="service-card">
+        <h4>Consultation gratuite</h4>
+        <span class="price">GRATUIT</span>
+        <ul>
+          <li>Rencontre initiale : 20 min.</li>
+          <li>Compréhension des besoins & exploration des options</li>
+          <li>Identification des problématiques</li>
+          <li>Premières recommandations sans engagement</li>
+        </ul>
+        <button class="btn-choose">Choisir</button>
+      </div>
+      <div class="service-card">
+        <h4>Diagnostic & planification</h4>
+        <span class="price">65€</span>
+        <ul>
+          <li>Consultation détaillée : 1h.</li>
+          <li>Analyse approfondie des besoins spécifique</li>
+          <li>Identification des problématiques</li>
+          <li>Recommandations des solutions techniques</li>
+        </ul>
+        <button class="btn-choose">Choisir</button>
+      </div>
+      <div class="service-card">
+        <h4>Diagnostic complet & Suivi</h4>
+        <span class="price">115€</span>
+        <ul>
+          <li>Diagnostic approfondi : 2h.</li>
+          <li>Planification de l’efficacité énergétique</li>
+          <li>Conseils sur les subventions</li>
+          <li>Recommandation détaillée et orientation vers les experts qualifiés</li>
+        </ul>
+        <button class="btn-choose">Choisir</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  
 </BaseLayout>
