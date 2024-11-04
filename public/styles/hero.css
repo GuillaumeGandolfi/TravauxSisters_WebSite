@@ -103,12 +103,17 @@
     padding: 4rem 1.5rem;
   }
 
+  .hero-background-image {
+    object-position: 60% 60%;
+  }
+
   .hero-content h1 {
     font-size: 2rem;
   }
 
   .hero-content p {
     font-size: 1rem;
+    line-height: 1.5;
   }
 
   .hero-btn-primary,

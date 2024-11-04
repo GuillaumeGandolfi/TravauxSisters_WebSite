@@ -4,6 +4,7 @@ import HeroSection from '../components/HeroSection.astro';
 import FlorenceImage from '../assets/images/florence.webp';
 import '../styles/community.css';
 import '../styles/stats.css';
+import '../styles/support-about.css';
 ---
 
 <BaseLayout>
@@ -55,9 +56,20 @@ import '../styles/stats.css';
     </div>
   </section>
   
-
-  
-  
-  
+  <section class="project-support-section">
+    <div class="project-support-container">
+      <div class="project-support-image">
+        <img src={`${import.meta.env.BASE_URL}images/support-about.webp`} alt="Illustration d'une expertise en accompagnement de projet" />
+      </div>
+      <div class="project-support-content">
+        <h3 class="project-support-subtitle">Accompagnement de projet</h3>
+        <h2 class="project-support-title">Profitez d'une véritable expertise !</h2>
+        <div class="underline"></div>
+        <p class="project-support-description">
+          Florence Jaspart, forte de 30 ans d’expérience dans le secteur du BTP, souhaite créer une communauté de femmes, qu’elles soient novices ou expérimentées. L’objectif est de partager des connaissances et de soutenir celles qui hésitent encore à se lancer dans le domaine.
+        </p>
+      </div>
+    </div>
+  </section>
 </BaseLayout>
 

@@ -9,12 +9,13 @@
 
 .background-image {
   position: absolute;
-  top: -340px;
+  top: 0;
   left: 0;
   width: 100%;
-  height: auto;
+  height: 100%;
   z-index: 0;
   opacity: 0.7;
+  object-fit: cover;
 }
 
 .stats-content {
@@ -49,9 +50,21 @@
 
 /* ------ MOBILE ------ */
 @media (max-width: 768px) {
+  .stats-section {
+    padding: 2rem 1rem;
+  }
+
+  .background-image {
+    height: 100%;
+    object-fit: cover;
+    top: 0;
+  }
+
   .stats-content {
     flex-direction: column;
     gap: 1.5rem;
+    max-width: 90%;
+    margin: 0 auto;
   }
 
   .stat-value {
