@@ -83,7 +83,7 @@
 .price {
   font-size: 1.2rem;
   font-weight: bold;
-  color: #ff1493;
+  color: #d0137a;
   position: relative;
   display: inline-block;
   margin: 1rem 0;
@@ -95,7 +95,7 @@
   display: block;
   height: 2px;
   width: 60px;
-  background-color: #ff1493;
+  background-color: #d0137a;
   margin: 0.5rem auto;
 }
 
@@ -124,7 +124,7 @@
 
 .service-card ul li::before {
   content: "✔";
-  color: #ff1493;
+  color: #d0137a;
   font-size: 1rem;
   position: absolute;
   left: 0;
@@ -133,7 +133,7 @@
 
 .btn-choose {
   padding: 0.5rem 1rem;
-  background-color: #ff1493;
+  background-color: #d0137a;
   color: #fff;
   border: none;
   border-radius: 20px;

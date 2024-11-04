@@ -1,8 +1,84 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import HeroSection from '../components/HeroSection.astro';
+import ContactBackgroundImage from '../assets/images/hero-contact.webp';
+
+import '../styles/contact-infos.css';
+import '../styles/contact-form.css';
+
+const title = "Contactez-nous";
+const description = "Travaillons ensemble";
 ---
 
 <BaseLayout>
-  <h1>Contact</h1>
-  <p>Contactez-nous pour toute question ou demande.</p>
+  <HeroSection 
+    backgroundImage={ContactBackgroundImage} 
+    title={title} 
+    description={description} 
+  />
+
+  <section class="contact-info">
+    <h2 class="contact-title">Nos Bureaux</h2>
+    <h3 class="contact-subtitle">Parlez-moi de votre projet</h3>
+    <div class="underline"></div>
+    
+    <ul class="contact-details">
+      <li>
+        <span class="icon">&#128222;</span> 06.66.06.62.08 <!-- Icône téléphone moderne -->
+      </li>
+      <li>
+        <span class="icon">&#128231;</span> florence.jaspart@travauxsisters.fr <!-- Icône email moderne -->
+      </li>
+      <li>
+        <span class="icon">&#128205;</span> 87 Rue du Fontenoy, 59100 Roubaix <!-- Icône localisation -->
+      </li>
+    </ul>
+  </section>
+
+  <section class="contact-form-section">
+    <h2 class="contact-form-title">Travaillez ensemble</h2>
+    <h3 class="contact-form-subtitle">Contactez-nous</h3>
+    <div class="form-underline"></div>
+  
+    <form class="contact-form">
+      <div class="form-group">
+        <label for="first-name">Prénom <span class="required">*</span></label>
+        <input type="text" id="first-name" placeholder="Prénom" required>
+        <span class="error-message">Ce champ est nécessaire</span>
+      </div>
+    
+      <div class="form-group">
+        <label for="last-name">Nom <span class="required">*</span></label>
+        <input type="text" id="last-name" placeholder="Nom" required>
+        <span class="error-message">Ce champ est nécessaire</span>
+      </div>
+    
+      <div class="form-group">
+        <label for="email">Email <span class="required">*</span></label>
+        <input type="email" id="email" placeholder="Email" required>
+        <span class="error-message">Ce champ est nécessaire</span>
+      </div>
+    
+      <div class="form-group">
+        <label for="comment">Commentaire</label>
+        <textarea id="comment" placeholder="Votre message..."></textarea>
+      </div>
+    
+      <button type="submit" class="btn-primary">Envoyer</button>
+    </form>
+  </section>
+
 </BaseLayout>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const form = document.querySelector('.contact-form') as HTMLFormElement;
+    form.addEventListener('submit', (event) => {
+      if (!form.checkValidity()) {
+        event.preventDefault();
+        form.classList.add('submitted');
+      }
+    });
+  });
+</script>
+
