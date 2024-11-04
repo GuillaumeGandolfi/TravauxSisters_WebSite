@@ -1,0 +1,1 @@
+import"./hoisted.CH-VBGF5.js";document.addEventListener("DOMContentLoaded",()=>{const t=document.querySelector(".contact-form");t.addEventListener("submit",e=>{t.checkValidity()||(e.preventDefault(),t.classList.add("submitted"))})});
