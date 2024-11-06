@@ -1,0 +1,1 @@
+import"./hoisted.CH-VBGF5.js";document.querySelectorAll(".faq-question").forEach(e=>{e.addEventListener("click",()=>{const t=e.nextElementSibling,n=e.querySelector(".icon");t.style.display=t.style.display==="block"?"none":"block",n.textContent=n.textContent==="+"?"−":"+"})});
