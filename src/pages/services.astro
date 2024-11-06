@@ -4,6 +4,7 @@ import HeroSection from '../components/HeroSection.astro';
 import ServicesImage from '../assets/images/services_image.webp';
 
 import '../styles/price-cards.css';
+import '../styles/project-step.css';
 ---
 
 <BaseLayout>
@@ -25,20 +26,37 @@ import '../styles/price-cards.css';
     }}
   />
 
+  <section class="project-steps-section">
+    <div class="project-steps-container">
+      <div class="project-image">
+        <img src={`${import.meta.env.BASE_URL}images/project-step.webp`} alt="Illustration d'un projet de rénovation" />
+      </div>
+      <div class="project-content">
+        <h3 class="project-subtitle">Accompagnement de projet</h3>
+        <h2 class="project-title">Votre projet en 4 étapes</h2>
+        <p>
+          Chez Travaux Sisters, nous plaçons vos besoins au cœur de notre démarche en vous proposant un accompagnement sur mesure à chaque étape de votre projet. Nous sommes fiers de vous offrir un service entièrement adapté à vos attentes, pour une expérience unique et personnalisée.
+        </p>
+        <ul class="steps-list">
+          <li>Entretien de consultation avec un expert</li>
+          <li>Diagnostic de votre besoin</li>
+          <li>Mise en relation avec l’artisan</li>
+          <li>Réalisation des travaux</li>
+        </ul>
+        <a href="/contact" class="btn-secondary">J'obtiens une consultation gratuite</a>
+      </div>
+    </div>
+  </section>
+
 <section class="services-section">
-  <!-- Première div : Titre et Sous-titre -->
   <div class="services-header">
     <h2>Nos Services</h2>
     <h3>Découvrez des offres adaptées à vos besoins !</h3>
     <div class="underline"></div>
   </div>
 
-  <!-- Deuxième div : Conteneur des cartes de prix avec image de fond -->
   <div class="pricing-cards-wrapper">
-    <!-- Image de fond -->
     <img src={`${import.meta.env.BASE_URL}images/price-cards.webp`} alt="Fond de la section des services" class="background-image" />
-    
-    <!-- Cartes de prix -->
     <div class="services-cards">
       <div class="service-card">
         <h4>Consultation gratuite</h4>
@@ -77,6 +95,4 @@ import '../styles/price-cards.css';
   </div>
 </section>
 
-
-  
 </BaseLayout>
