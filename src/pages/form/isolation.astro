@@ -1,0 +1,14 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import FormComponent from '../../components/FormComponent.astro';
+
+const title = "Travaux d’isolation ou de rénovation énergétique";
+const placeholderProject = "Ex : Je souhaite revoir l'isolation dans mon logement";
+---
+
+<BaseLayout needsWorksFormCSS={true}>
+  <FormComponent 
+    title={title} 
+    placeholderProject={placeholderProject} 
+  />
+</BaseLayout>

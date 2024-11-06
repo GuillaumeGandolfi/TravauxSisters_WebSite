@@ -100,27 +100,27 @@ import HeroSection from '../components/HeroSection.astro';
         </a>
       </li>
       <li>
-        <a href="./form/isolation-energie" class="form-button" style={`background: url('${import.meta.env.BASE_URL}images/isolation.webp');`} aria-label="Isolation et énergie">
+        <a href="./form/isolation" class="form-button" style={`background: url('${import.meta.env.BASE_URL}images/isolation.webp');`} aria-label="Isolation et énergie">
           <span>Isolation & énergie</span>
         </a>
       </li>
       <li>
-        <a href="./form/renovation-exterieur" class="form-button" style={`background: url('${import.meta.env.BASE_URL}images/ext-renovation.webp');`} aria-label="Rénovation extérieur">
+        <a href="./form/ext-renovation" class="form-button" style={`background: url('${import.meta.env.BASE_URL}images/ext-renovation.webp');`} aria-label="Rénovation extérieur">
           <span>Rénovation extérieur</span>
         </a>
       </li>
       <li>
-        <a href="./form/extension-aggrandissement" class="form-button" style={`background: url('${import.meta.env.BASE_URL}images/extension.webp');`} aria-label="Extension et agrandissement">
+        <a href="./form/extension" class="form-button" style={`background: url('${import.meta.env.BASE_URL}images/extension.webp');`} aria-label="Extension et agrandissement">
           <span>Extension & agrandissement</span>
         </a>
       </li>
       <li>
-        <a href="./form/amenagement-exterieur" class="form-button" style={`background: url('${import.meta.env.BASE_URL}images/ext-design.webp');`} aria-label="Aménagement extérieur">
+        <a href="./form/ext-design" class="form-button" style={`background: url('${import.meta.env.BASE_URL}images/ext-design.webp');`} aria-label="Aménagement extérieur">
           <span>Aménagement extérieur</span>
         </a>
       </li>
       <li>
-        <a href="./form/autre-projet" class="form-button" style={`background: url('${import.meta.env.BASE_URL}images/other-project.webp');`} aria-label="Autre projet">
+        <a href="./form/others" class="form-button" style={`background: url('${import.meta.env.BASE_URL}images/other-project.webp');`} aria-label="Autre projet">
           <span>Autre projet</span>
         </a>
       </li>
@@ -128,7 +128,6 @@ import HeroSection from '../components/HeroSection.astro';
   </section>
   
   
-
   <section class="testimonial-section" 
   style={`background: url('${import.meta.env.BASE_URL}images/paint-background.png') no-repeat top left;`} 
   aria-labelledby="testimonial-title"
@@ -156,6 +155,73 @@ import HeroSection from '../components/HeroSection.astro';
   </div>
 </section>
 
-  
+<section class="faq-section">
+  <h2>Des questions ?</h2>
+  <p>Pas de soucis, on y répond juste ici !</p>
+
+  <div class="faq">
+    <div class="faq-item">
+      <button class="faq-question">
+        <span class="icon">+</span> Quels sont les principaux services proposés par Travaux Sisters ?
+      </button>
+      <div class="faq-answer">
+        <p>Travaux Sisters offre une gamme de services pour les particuliers et les professionnels !</p>
+        <ul class="custom-list">
+          <li><span class="check-icon">✔</span> Accompagnement personnalisé : Nous vous guidons tout au long de votre projet, que vous souhaitiez faire les travaux vous-même ou trouver un artisan qualifié.</li>
+          <li><span class="check-icon">✔</span> Plateforme interactive : Notre site web propose des to-do lists personnalisées, des conseils pratiques et une assistance via une intelligence artificielle pour vous aider à chaque étape de votre projet.</li>
+        </ul>
+      </div>
+      
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        <span class="icon">+</span> Quels types de projets Travaux Sisters peut-elle m'aider à réaliser ?
+      </button>
+      <div class="faq-answer">
+        <p>Nous aidons à la réalisation de divers projets, allant des petites rénovations domiciliaires aux grands projets de construction. Notre accompagnement personnalisé s’adapte à tous les types de projets !</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        <span class="icon">+</span> Comment les artisans sont-ils sélectionnés et évalués ?
+      </button>
+      <div class="faq-answer">
+        <p>Nous sélectionnons nos artisans partenaires avec soin. Chaque artisan est vérifié pour ses qualifications, ses assurances et ses références. De plus, nous recueillons régulièrement les avis de nos clients pour évaluer la qualité du service et maintenir un niveau élevé de satisfaction.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        <span class="icon">+</span> Dois-je payer pour obtenir un devis ?
+      </button>
+      <div class="faq-answer">
+        <p>Non, notre service de mise en relation et de devis est entièrement gratuit pour les particuliers. Vous pouvez recevoir plusieurs devis sans aucun engagement de votre part, ce qui vous permet de comparer les offres et de faire le meilleur choix pour votre projet.</p>
+      </div>
+    </div>
+    
+    <div class="faq-item">
+      <button class="faq-question">
+        <span class="icon">+</span> Quelles garanties sont offertes sur les travaux réalisés ?
+      </button>
+      <div class="faq-answer">
+        <p>Les artisans partenaires offrent des garanties sur les travaux réalisés, généralement sous la forme de garanties légales et décennales. De plus, nous nous assurons que tous les travaux respectent les normes en vigueur et les délais convenus. En cas de problème, notre équipe est là pour vous aider à trouver une solution rapidement.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  document.querySelectorAll('.faq-question').forEach(button => {
+    button.addEventListener('click', () => {
+      const answer = button.nextElementSibling;
+      const icon = button.querySelector('.icon');
+      answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+      icon.textContent = icon.textContent === '+' ? '−' : '+';
+    });
+  });
+</script>
+
   
 </BaseLayout>

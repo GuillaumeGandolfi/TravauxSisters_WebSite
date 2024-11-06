@@ -13,9 +13,11 @@ import WhiteLogo from '../assets/images/white-logo.webp';
       <h3 id="footer-title">Nous contacter</h3>
       <ul>
         <li>
-          <img class="emoji-icon" src={`${import.meta.env.BASE_URL}images/2709.svg`} alt="Icône enveloppe postale" loading="lazy"/> 
-          Formulaire de contact
-        </li>
+          <a href={`${import.meta.env.BASE_URL}contact`} class="contact-link" aria-label="Formulaire de contact">
+            <img class="emoji-icon" src={`${import.meta.env.BASE_URL}images/2709.svg`} alt="Icône enveloppe postale" loading="lazy"/> 
+            Formulaire de contact
+          </a>
+        </li>        
         <li>
           <img class="emoji-icon" src={`${import.meta.env.BASE_URL}images/1f4cd.svg`} alt="Icône localisation" loading="lazy"/> 
           EuraTechnologies Blanchemaille – Incubateur<br>87 Rue du Fontenoy, 59100 Roubaix
@@ -30,7 +32,9 @@ import WhiteLogo from '../assets/images/white-logo.webp';
     <div class="footer-about">
       <h3>À propos</h3>
       <ul>
-        <li>Qui sommes-nous ?</li>
+        <li>
+          <a href={`${import.meta.env.BASE_URL}about`} class="footer-link" aria-label="En savoir plus sur nous">Qui sommes-nous ?</a>
+        </li>
         <li>Mentions légales</li>
         <li>Politique de confidentialité</li>
       </ul>
