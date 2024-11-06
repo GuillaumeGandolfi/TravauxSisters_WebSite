@@ -73,3 +73,34 @@
   color: #fff;
   border-color: #d0137a;
 }
+
+/* ------ MOBILE ------ */
+@media (max-width: 768px) {
+  .project-steps-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1.5rem;
+  }
+
+  .project-steps-section {
+    padding-bottom: 0;
+  }
+
+  .project-image img {
+    max-width: 90%;
+  }
+
+  .project-content {
+    margin-top: 1rem;
+  }
+
+  .project-title {
+    font-size: 1.5rem;
+  }
+
+  .steps-list li {
+    padding-left: 1rem;
+    font-size: 0.9rem;
+  }
+}
